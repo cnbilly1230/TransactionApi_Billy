@@ -18,7 +18,7 @@ public class KafkaProducer {
     @Autowired
     private KafkaTemplate<String, TransactionMessageDto> kafkaTemplate;
 
-    private String kafkaTopic = "January";
+    private String kafkaTopic = "Transactions";
 
 
     @Scheduled(fixedRate = 5000)

@@ -30,8 +30,8 @@ public class KafkaConsumer {
     TransactionMessageDtoFactory transactionMessageDtoFactory;
 
     @KafkaListener(
-            topics = "January",
-            groupId = "00003"
+            topics = "Transactions",
+            groupId = "00001"
     )
     void consume(GenericMessage<String> message) throws JsonProcessingException {
         TransactionMessageDto transactionMessageDto = mapper.readValue(message.getPayload(), TransactionMessageDto.class);
