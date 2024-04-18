@@ -46,19 +46,19 @@ public class DataLoader {
             }
         }
         ArrayList<UserAccount> users = new ArrayList<>();
-        for(int i = 0; i <32; i ++){
+        for(int i = 0; i <33; i ++){
             UserAccount user = UserAccount.builder()
                 .uid(uid1)
                 .accountIBAN(userAccounts.get(i))
                 .build();
             users.add(user);
-        }for(int i = 32; i <64; i ++){
+        }for(int i = 33; i <66; i ++){
             UserAccount user = UserAccount.builder()
                 .uid(uid2)
                 .accountIBAN(userAccounts.get(i))
                 .build();
             users.add(user);
-        }for(int i = 64; i <96; i ++){
+        }for(int i = 66; i <99; i ++){
             UserAccount user = UserAccount.builder()
                 .uid(uid3)
                 .accountIBAN(userAccounts.get(i))
