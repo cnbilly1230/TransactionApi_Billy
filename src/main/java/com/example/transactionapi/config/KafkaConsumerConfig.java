@@ -33,6 +33,8 @@ public class KafkaConsumerConfig {
         return new DefaultKafkaConsumerFactory<>(consumerConfig());
     }
 
+    @Bean
+
     public KafkaListenerContainerFactory<
             ConcurrentMessageListenerContainer<String, String>> factory (
             ConsumerFactory<String, String> consumerFactory
